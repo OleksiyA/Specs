@@ -83,6 +83,13 @@ Pod::Spec.new do |s|
     xep0203.source_files = 'Extensions/XEP-0203/**/*.{h,m}'
     xep0203.framework = 'SystemConfiguration'
     xep0203.dependency 'XMPPFramework/Core'
+    xep0203.dependency 'XMPPFramework/XEP-0082'
+  end
+
+  s.subspec 'XEP-0082' do |xep0082|
+    xep0082.source_files = 'Extensions/XEP-0082/**/*.{h,m}'
+    xep0082.framework = 'SystemConfiguration'
+    xep0082.dependency 'XMPPFramework/Core'
   end
 
 
