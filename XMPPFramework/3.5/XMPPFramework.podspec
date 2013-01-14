@@ -72,4 +72,10 @@ Pod::Spec.new do |s|
     rc.dependency 'XMPPFramework/Core'
   end
   
+  s.subspec 'Roster' do |rc|
+    rc.source_files = 'Extensions/Roster/**/*.{h,m,xcdatamodel}'
+    rc.framework = 'SystemConfiguration'
+    rc.dependency 'XMPPFramework/Core'
+  end
+
 end
