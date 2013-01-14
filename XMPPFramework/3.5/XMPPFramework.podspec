@@ -72,10 +72,18 @@ Pod::Spec.new do |s|
     rc.dependency 'XMPPFramework/Core'
   end
   
-  s.subspec 'Roster' do |rc|
-    rc.source_files = 'Extensions/Roster/**/*.{h,m,xcdatamodel}'
-    rc.framework = 'SystemConfiguration'
-    rc.dependency 'XMPPFramework/Core'
+  s.subspec 'Roster' do |rost|
+    rost.source_files = 'Extensions/Roster/**/*.{h,m,xcdatamodel}'
+    rost.framework = 'SystemConfiguration'
+    rost.dependency 'XMPPFramework/Core'
+    rost.dependency 'XMPPFramework/XEP-0203'
   end
+
+  s.subspec 'XEP-0203' do |xep0203|
+    xep0203.source_files = 'Extensions/XEP-0203/**/*.{h,m}'
+    xep0203.framework = 'SystemConfiguration'
+    xep0203.dependency 'XMPPFramework/Core'
+  end
+
 
 end
