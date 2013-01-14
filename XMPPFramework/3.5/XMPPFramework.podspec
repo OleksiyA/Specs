@@ -3,9 +3,9 @@ Pod::Spec.new do |s|
   s.version = '3.5'
   s.license = 'BSD'
   s.summary = 'An XMPP Framework in Objective-C for the Mac / iOS development community.'
-  s.homepage = 'https://github.com/robbiehanson/XMPPFramework'
+  s.homepage = 'https://github.com/OleksiyA/XMPPFramework'
   s.author = { 'Robbie Hanson' => 'robbiehanson@deusty.com' }
-  s.source = { :git => 'https://github.com/robbiehanson/XMPPFramework.git', :tag => '3.5' }
+  s.source = { :git => 'https://github.com/OleksiyA/XMPPFramework.git', :tag => '3.5' }
 
   s.description = 'XMPPFramework provides a core implementation of RFC-3920 (the xmpp standard), along with
                   the tools needed to read & write XML. It comes with multiple popular extensions (XEP\'s),
